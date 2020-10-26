@@ -1,0 +1,61 @@
+{
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "no-undef": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "prefer-destructuring": ["error", { "object": true, "array": false }],
+    "no-param-reassign": "off",
+    "no-plusplus": "off",
+    "implicit-arrow-linebreak": "off",
+    "arrow-parens": "off",
+    "no-underscore-dangle": "off",
+    "object-curly-newline": "off",
+    "no-useless-escape": "off",
+    "operator-linebreak": "off",
+    "space-before-function-paren": "off",
+    "no-restricted-syntax": "off",
+    "guard-for-in": "off",
+    "object-shorthand": "off",
+    "no-console": "off",
+    "no-use-before-define": "off",
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
+    "eqeqeq": "off"
+  },
+  "globals": {
+    "React": "writable"
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "import", "react-hooks"],
+  "ignorePatterns": ["node_modules/"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"],
+        "moduleDirectory": ["node_modules", "src/"]
+      },
+      "paths": ["src"]
+    },
+    "react": {
+      "pragma": "React",
+      "version": "lastest"
+    }
+  }
+}
