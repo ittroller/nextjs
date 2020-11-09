@@ -1,0 +1,1 @@
+// global type, third party

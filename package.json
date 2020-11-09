@@ -27,6 +27,7 @@
     }
   },
   "devDependencies": {
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.20",
+    "path": "^0.12.7"
   }
 }
